@@ -1,0 +1,99 @@
+.searchContainer{
+    width: 90%;
+    height: 10%;
+    /* background: rgba(172, 165, 165, 0.5); */
+    margin: 0px auto;
+    padding: 20px 0px;
+    border-radius: 10px;
+    display: flex;
+}
+.searchWrapper{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.tempBtn{
+    width: 40%;
+    display: flex;
+    align-self: flex-end;
+}
+.tempBtn input{
+    width: 40%;
+    border-radius: 20px;
+
+}
+.searchBar{
+    width: 50%;
+    background: rgba(172, 165, 165, 0.5);
+    border: 0px;
+    outline: none;
+    border:2px solid rgb(247, 240, 240);
+    border-radius: 20px;
+    padding-left: 10px;
+    color: white;
+
+}
+
+/*---responsive query--*/
+@media (max-width:480px) {
+    .searchWrapper{
+        width: 100%;    
+    }
+    .searchBar{
+        width: 100%;
+    }
+    .tempBtn{
+      width: 30%;
+      justify-content: center;
+    }
+    .tempBtn input{
+        width: 80%;   
+    }
+}
+@media (max-width:1024px) and (min-width:481px) {
+    .searchWrapper{
+        width: 100%;    
+    }
+    .searchBar{
+        width: 90%;
+    }
+    .tempBtn{
+      width: 30%;
+    }  
+    .tempBtn input{
+        width: 70%;   
+    }
+}
+@media (min-width:800px) and (max-width:1024px){
+    .searchWrapper{
+        width: 100%;   
+    }
+    .searchBar{
+        width: 80%;
+    }
+    .tempBtn{
+      width: 30%;
+    }  
+    .tempBtn input{
+        width: 60%;   
+    }
+}
+
+@media (min-width:1024px){
+    .searchWrapper{
+        width: 100%;      
+    }
+    .searchBar{
+        width: 70%;
+    }
+    .tempBtn{
+      width: 30%;
+
+    }  
+    .tempBtn input{
+        width: 50%;   
+    }
+
+}
+

@@ -1,0 +1,207 @@
+.weatherContainer{
+    width: 90%;
+    height: 90%;
+    /* background: rgba(255,255, 255, 0.2); */
+    margin-top: 20px;
+    margin: 0px auto;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+.weatherContent{
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+.currentWeatherInfo{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+.currentWeatherInfo_details{
+    width: 40%;  
+}
+.temperature{
+    width:100%;
+    display: flex;
+}
+.temper{
+    font-size: 60px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+.units{
+    width:20%;
+}
+.unit1{
+    cursor: pointer;
+    font-size:40px;
+}
+.unit2{
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+.description{
+    width: 100%;
+    font-size: 18px;
+}
+.currentWeatherInfo_image{
+    width: 50%;  
+}
+
+.weatherInfo{
+    width: 80%;
+    height: 25%;
+    margin:auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.card_info_1{
+    background: rgba(255,255, 255, 0.2);
+    /* border: 1px solid rgb(247, 240, 240); */
+    position: relative;
+    width: 33%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navArrow{
+    rotate: 270deg;
+}
+/*---Weather daily forecast----*/
+.daily_forecast{
+    width: 100%;
+    height: 30%;
+}
+.forecast_timeline{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size:  20px;
+    margin-bottom: 10px;
+
+}
+.forecast_row{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+.col{
+    width: 15%;
+    height: 90%;
+    background: rgba(255,255, 255, 0.2);
+    /* border: 1px solid rgb(247, 240, 240); */
+    margin: 3px;
+    position: relative;
+    border-radius: 10px;
+
+}
+.col div{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    padding-left: 10px;
+    position: relative;
+}
+.col div img{
+    width: 30%;
+    height: 60%;
+}
+
+/*---responsive query--*/
+@media (max-width:480px) {
+    .weatherInfo{
+        width: 90%;
+        min-height: 70%;
+    }
+    .card_info_1{
+        flex:100%;
+        margin: 5px;
+    }
+    /*----Current Weather----*/
+    .currentWeatherInfo{
+        width: 70%;
+    }
+    .currentWeatherInfo_details{
+        width: 50%;
+    }
+    .currentWeatherInfo_image{
+        width: 50%;     
+    }
+
+    /*---daily forecast*/
+    .col{
+        flex: 40%;    
+    }
+
+}
+@media (max-width:1024px) and (min-width:481px) {
+    .weatherInfo{
+        width: 100%;
+        min-height: 45%;
+    }
+    .row{
+        width: 100%;
+    }
+    .card_info_1{
+        flex:40%;
+        margin: 10px 5px;
+        font-size: medium;
+    }
+    .col{
+        flex: 40%;    
+    }
+
+    /*----Current Weather----*/
+    .currentWeatherInfo{
+        width: 60%;
+    }
+}
+@media (min-width:800px) and (max-width:1024px){
+    .col{
+        flex: 30%;    
+    }
+
+    /*----Current Weather----*/
+    .currentWeatherInfo{
+        width: 50%;
+    }  
+}
+
+@media (min-width:1024px){
+    .weatherInfo{
+        width: 100%;
+    }
+    .row{
+        width: 90%;
+    }
+    .card_info_1{
+        flex:30%;
+        margin: 10px 5px;
+        font-size: medium;
+    }
+
+
+     /*----Current Weather----*/
+     .currentWeatherInfo{
+        width: 40%;
+    }
+
+}
+
